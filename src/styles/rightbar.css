@@ -1,7 +1,7 @@
 .rightbar-container {
   display: flex;
   flex-direction: column;
-  flex: 1.5;
+  flex: 1;
   width: 100%;
   max-width: 452px;
   border-left: 1px solid #e3e7f7;
