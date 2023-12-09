@@ -1,9 +1,14 @@
 .rightbar-container {
-    display: flex;
-    flex-direction: column;
-    flex: 1.5;
-    width: 100%;
-    max-width: 452px;
-    border-left: 1px solid #e3e7f7;
+  display: flex;
+  flex-direction: column;
+  flex: 1.5;
+  width: 100%;
+  max-width: 452px;
+  border-left: 1px solid #e3e7f7;
+}
 
+@media screen and (max-width: 1001px) {
+  .rightbar-container {
+    display: none;
+  }
 }

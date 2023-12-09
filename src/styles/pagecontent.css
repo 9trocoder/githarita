@@ -1,7 +1,18 @@
 .pagecontent-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 598px;
+  flex: 1.5;
+}
+
+@media screen and (max-width: 1272px) {
+    .pagecontent-container {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+  .pagecontent-container {
     width: 100%;
-    max-width: 598px;
-    flex: 1.5;
+  }
 }
