@@ -76,7 +76,9 @@ function Signin() {
                 />
               )}
             </div>
-            <button className='signupnextbtn'>Sign in</button>
+            <button className='signupnextbtn' onClick={() => navigate("/home")}>
+              Sign in
+            </button>
             <div className='signup-or-divider'>
               <div className='leftdivider' />
               <p className='or-divider'>Or</p>

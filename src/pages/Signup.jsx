@@ -223,7 +223,12 @@ function Signup() {
                 </p>
               </div>
 
-              <button className='signupnextbtn'>Create account</button>
+              <button
+                className='signupnextbtn'
+                onClick={() => navigate("/home")}
+              >
+                Create account
+              </button>
             </div>
           )}
         </div>
