@@ -6,10 +6,12 @@
 }
 
 .navbar-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 0px 24px;
   border-bottom: 1px solid #ececec;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-container-left {
@@ -34,10 +36,20 @@
 .navbar-container-center {
   flex: 1;
   padding: 0px 32px;
-  margin: auto;
-  max-width: 750px;
+  margin: 0 auto;
   width: 100%;
+  max-width: 750px;
   position: relative;
+}
+
+
+.navbar-container-searchmain {
+  display: flex;
+  width: 100%;
+  background-color: #ffff;
+  border-radius: 20px;
+  top: 0;
+  border: none;
 }
 
 .navbar-container-search-demo {
@@ -47,6 +59,7 @@
   background-color: #f9f9f9;
   border: 1px solid #e8e8e8;
   border-radius: 50px;
+  cursor: text;
 }
 
 .navbar-container-search-demo-icon {
@@ -62,13 +75,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 15px;
   color: #959595;
 }
 
 .navbar-container-right {
   display: flex;
+  justify-self: flex-end;
   align-items: center;
   gap: 20px;
 }
@@ -146,7 +160,7 @@
 
 .navbar-container-search-body {
   position: absolute;
-  top: -2px;
+  top: 0;
   z-index: 2;
   right: 0;
   left: 0;
@@ -157,6 +171,8 @@
 .navbar-container-search-top {
   display: flex;
   padding: 10px;
+  margin: auto;
+  width: 100%;
 }
 
 .navbar-container-search-input {
@@ -164,11 +180,57 @@
   font-weight: 600;
   font-size: 18px;
   color: #000000;
-  padding: 5px 0;
   outline: none;
   border: none;
+  border-radius: 0px 50px 50px 0px;
 }
 
 .navbar-container-search-input::placeholder {
   color: #959595;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+
+
+
+.navbar-container-suggested {
+  padding-bottom: 20px;
+}
+
+.navbar-container-suggestedsearchlabel {
+  color: #696969;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  margin: 0px 0px 8px;
+  padding:0px 36px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.navbar-container-searchlistitems {
+ display: flex;
+ flex-direction: column;
+}
+
+.navbar-container-searchlistitem {
+  color: #191919;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 36px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.navbar-container-searchlistitem:hover {
+  background-color: #f9f9f9;
+}
+
+.navbar-container-sortingfiltering {
+  border-color: #e8e8e8;
+  border-style: solid none none;
+  border-width: 1px 0px 0px;
 }

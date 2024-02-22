@@ -11,6 +11,7 @@ body {
 
 code {
   font-family: 'Source Sans 3', sans-serif;
+  box-sizing: border-box;
 }
 
 ::placeholder {
